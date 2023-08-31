@@ -1,0 +1,17 @@
+<div id="main" *ngFor="let item of cartItems">
+    <div class="img"><img src="{{item.image}}" alt=""></div>
+    <div class="title">
+        <h6>{{item.title}}</h6>
+    </div>
+    <div class="qty">
+        <h6>{{item.quantity}}</h6>
+    </div>
+    <div class="price">
+        <h6>Price: ${{item.price}}</h6>
+    </div>
+    <div class="total">
+        <h6>Total: ${{item.quantity * item.price}}</h6>
+    </div>
+</div>
+
+<div class="grandTotal">Total Amount: ${{total}}  </div>
